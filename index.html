@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klaude Chat</title>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="chat-container">
+    <div class="chat-header">Klaude</div>
+    <div class="chat-box" id="chat-box">
+        <div class="message klaude-message">Hi! I'm Klaude. Ask me anything!</div>
+    </div>
+    <div class="input-area">
+        <input type="text" id="user-input" placeholder="Type your message here..." onkeypress="handleKeyPress(event)">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
